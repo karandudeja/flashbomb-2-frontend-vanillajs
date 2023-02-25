@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="mystyles-index.css">
+    <title>Images to Inspire - vJS</title>
+</head>
+<body>
+    <div class="warning-container" id="id-warning">
+        <div class="warning-text-container">
+            <h1>Important Note ⚠️🛑</h1>
+            <p>Please, do NOT use this app if you have been diagnosed with <a class="link" href="https://tinyurl.com/5v7bnpjj" target="_blank">Photosensitive Epilepsy (PSE).</a><br/><br/>
+
+            The app contains flashing or flickering visuals. The flickering can cause seizures and serious physical discomfort.<br/><br/>
+            
+            It is advised, this app be used in a well lit environment. In case of any discomfort, close this window/tab immediately,<br/>look away from the screen, and consult your physician.<br/><br/>
+            
+            This message is issued in the interest of your safety.💚 </p>
+            <button class="btn" onclick="hideWarning()">Okay, I understand</button>
+        </div>
+    </div>
+    <div class="my-container-fluid">
+        <div class="control-panel-left">
+            <!-- <h2 class="proj-title">I to I</h2> -->
+            <div class="div-mode">
+                <h4>Image<br/>Presentation Mode</h4>
+                <form>
+                    <input type="radio" id="mode-id-flash" name="select-mode" value="Flash Images">
+                    <label for="mode-id-flash">Flash</label><br><br>
+                    <input type="radio" id="mode-id-sideshow" name="select-mode" value="Slideshow Images">
+                    <label for="mode-id-sideshow">Scroll up</label>
+                </form>
+            </div>
+            <div class="div-category">
+                <h4>Category</h4>
+                <form>
+                    <input type="radio" id="cat-education" name="select-category" value="Education">
+                    <label for="cat-education">Education</label><br><br>
+                    <input type="radio" id="cat-health" name="select-category" value="Health">
+                    <label for="cat-health">Health</label><br><br>
+                    <input type="radio" id="cat-science" name="select-category" value="Science">
+                    <label for="cat-science">Science</label>
+                </form>
+            </div>
+            <div class="buttons-container">
+                <p><button class="btn-class" id="start-btn" onclick="boomFn()">Start</button></p>
+                <p><button class="btn-class" onclick="stopFn()">Stop</button></p>
+            </div>
+        </div>
+        <div class="img-container-main">
+            <div class="img-box-div" id="id-img-box-parent">
+                <img class="img-box-self" id="id-img-box" src="" alt="">
+                <div class="scroll-indicator" id="id-scroll-thing"></div>
+            </div>
+            <div class="img-controls-div" id="">
+                <input type="range" name="img-speed-slider" id="id-speed-slider" min="1" max="10" value="1" step="1">
+                <label for="img-speed-slider">Speed: <span id="speed-text"></span></label>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="myscript1.js" type="text/javascript"></script>
+</html>
+
